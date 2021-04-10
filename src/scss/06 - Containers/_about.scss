@@ -1,0 +1,64 @@
+.about {
+  background-color: $light-color;
+  padding: $gap-xlarger 0;
+  &__wrapper {
+    display: flex;
+  }
+  &__image {
+    flex: 1;
+    @include device(tablet) {
+      display: none;
+    }
+    @include device(mobile) {
+      display: none;
+    }
+    & img {
+      max-width: 290px;
+      margin-left: 1rem;
+    }
+  }
+  &__info {
+    flex: 1;
+    @include device(mobile) {
+      padding: 0 $gap-small;
+    }
+    @include device(tablet) {
+      padding: 0 $gap-small;
+    }
+    & p {
+      margin: $gap-medium 0;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: $gray-color;
+    }
+    & ul {
+      margin-bottom: $gap-larger;
+    }
+    & ul li {
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+    }
+    & ul .iconify {
+      margin-right: 1rem;
+      width: 30px;
+      height: 30px;
+    }
+    & .getApp {
+      display: flex;
+      align-items: center;
+      @include device(mobile) {
+        flex-direction: column;
+      }
+      & span {
+        margin-left: 2rem;
+        font-size: 1rem;
+        color: $gray-color;
+        @include device(mobile) {
+          margin-top: 1rem;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

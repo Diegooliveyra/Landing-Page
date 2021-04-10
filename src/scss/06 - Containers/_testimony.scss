@@ -1,0 +1,21 @@
+.testimony {
+  width: 100%;
+  background-color: $light-color;
+  padding: $gap-xlarger $gap-small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  & p {
+    max-width: 830px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: $gray-color;
+  }
+  & h3 {
+    margin-top: $gap-medium;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
