@@ -1,0 +1,18 @@
+.btn {
+  background: transparent;
+  border: 2px solid $dark-gray-color;
+  padding: $gap-small $gap-larger;
+  text-transform: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: $dark-gray-color;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .iconify {
+    width: 20px;
+    height: 20px;
+    margin-right: $gap-smaller;
+  }
+}

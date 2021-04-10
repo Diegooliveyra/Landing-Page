@@ -156,6 +156,38 @@ a {
   color: currentColor;
 }
 
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid #515151;
+  padding: 1.25rem 3.125rem;
+  text-transform: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #515151;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn .iconify {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.625rem;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -331,5 +363,80 @@ a {
 
 .noscrol {
   overflow: hidden;
+}
+
+.hero {
+  height: calc(100vh - 6rem);
+  background-color: black;
+  background: url("./../../src/assets/bg-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.875rem 1.25rem;
+}
+
+.hero__content {
+  width: 100%;
+}
+
+.hero__content p {
+  max-width: 500px;
+  padding: 1.875rem 0;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.hero__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero__buttons button {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__buttons button {
+    margin-bottom: 0.625rem;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+.companies {
+  padding: 1.875rem;
+  background-color: #f3f3f3;
+}
+
+.companies__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .companies__logo {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .companies__logo img + img {
+    margin-left: 1.875rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

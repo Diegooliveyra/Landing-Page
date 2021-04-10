@@ -1,0 +1,17 @@
+.companies {
+  padding: $gap-medium;
+  background-color: $light-gray-color;
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include device(mobile) {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      & img + img {
+        margin-left: $gap-medium;
+      }
+    }
+  }
+}

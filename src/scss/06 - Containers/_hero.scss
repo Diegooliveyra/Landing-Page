@@ -1,0 +1,34 @@
+.hero {
+  height: calc(100vh - 6rem);
+  background-color: black;
+  background: url('./../../src/assets/bg-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  padding: $gap-medium $gap-small;
+}
+
+.hero__content {
+  width: 100%;
+  & p {
+    max-width: 500px;
+    padding: $gap-medium 0;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+
+.hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  & button {
+    margin-right: 1rem;
+    @include device(mobile) {
+      margin-bottom: $gap-smaller;
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+}
