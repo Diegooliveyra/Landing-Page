@@ -1,0 +1,19 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Teste para vaga de Front-End Jr",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diegooliveyra/Landing-Page.git"
+  },
+  "author": "Diego Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Diegooliveyra/Landing-Page/issues"
+  },
+  "homepage": "https://github.com/Diegooliveyra/Landing-Page#readme"
+}
